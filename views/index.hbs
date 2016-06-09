@@ -1,0 +1,26 @@
+<html>
+<head>
+{{#css}}
+<link rel="stylesheet" href="{{../style.css}}">
+{{/css}}
+<title>{{title}}</title>
+</head>
+<body>
+<h3 style="text-align: center; text-transform: capitalize;">{{title}}</h3>
+{{#each news}}
+<p class="new-p" style="font-size: 12px; margin-left: 50px;"> - 
+<a href="#">{{this}}</a></p>
+{{/each}}
+
+<div>{{#each allSrc}}{{this}}{{/each}}</div>
+<div style="margin: 0 auto; width: 600px; height: 200px; background: #eee; padding-top: 10px; padding-left: 10px;">
+<p>
+<img src="{{mainImage}}" alt="" style="float: left; margin-right: 10px;">
+{{mainNews}}</p>
+<p style="font-size: 12px; font-weight: 300;">{{mainDesc}}</p>
+</div>
+
+
+
+</body>
+</html>
